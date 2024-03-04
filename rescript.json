@@ -1,0 +1,28 @@
+{
+  "name": "rrr-push-repro",
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ],
+  "package-specs": [
+    {
+      "module": "es6",
+      "in-source": true
+    }
+  ],
+  "suffix": ".mjs",
+  "bs-dependencies": [
+    "@glennsl/rescript-fetch",
+    "@rescript/core",
+    "@rescript/react",
+    "rescript-relay",
+    "rescript-relay-router"
+  ],
+  "bsc-flags": ["-open RescriptCore"],
+  "jsx": {
+    "version": 4,
+    "mode": "automatic"
+  }
+}
